@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row" *ngIf="stores.length > 0">
+        <div class="col-sm-4" *ngFor="let store of stores;">
+            <div class="card">
+                <img [src]="store.logo.url" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{ store.title }}</h5>
+                    <p class="card-text">City: {{ store.city }}</p>
+                    <p class="card-text">Address: {{ store.address }}</p>
+                    <a routerLink="/product" class="btn btn-primary">Scan Product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  

@@ -1,0 +1,6 @@
+<zxing-scanner
+  [formats]="allowedFormats"  
+  (camerasNotFound)="camerasNotFound($event)"
+  (scanSuccess)="scanSuccessHandler($event)"
+>
+</zxing-scanner>
